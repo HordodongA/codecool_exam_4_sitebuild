@@ -12,6 +12,11 @@ body {
     min-height: 100vh;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -20,35 +25,38 @@ body {
         'opsz' 48
 }
 
-
 #HeaderDiv {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    height: 60px;
     border-bottom: 1px solid #145434;
-    padding: 0.4% 1%;
+    padding: 0% 1%;
     color: #145434;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
 }
 
 #HeaderDiv h2 {
-    font-size: 2em;
+    font-size: 36px;
     font-weight: 700;
 }
 
 #HeaderDiv .material-symbols-outlined {
-    position: relative;
+    /* position: relative; */
     top: 9px;
+    font-size: 36px;
 }
+
 
 
 #ContainerDiv {
     padding-top: 65px;
     min-height: 100vh;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +84,7 @@ body {
 }
 
 #BeerCard h1 {
-    padding-bottom: 1em;
+    padding-bottom: 36px;
     color: #ffeedf;
     font-weight: 400;
     position: relative;
@@ -100,7 +108,7 @@ body {
     border: 2px solid #145434;
     border-radius: 50%;
     color: #145434;
-    font-size: 1.4em;
+    font-size: 24px;
     font-weight: 400;
     display: flex;
     justify-content: center;
@@ -110,14 +118,14 @@ body {
 }
 
 .BeerDetails {
-    height: 3.2em;
-    width: 13em;
+    height: 50px;
+    width: 200px;
     background-color: #ffeedf;
     border: 2px solid #145434;
     color: #145434;
     margin-top: -1em;
     padding: 0.8em;
-    font-size: 0.8em;
+    font-size: 14px;
     font-weight: 700;
     display: flex;
     justify-content: flex-end;
@@ -125,4 +133,12 @@ body {
     gap: 2em;
     align-self: flex-end;
     transform: translate(3.2em, 3.2em);
+}
+
+.BeerDetails:hover {
+    cursor: pointer;
+}
+
+.BeerDetails .material-symbols-outlined {
+font-size: 36px;
 }
